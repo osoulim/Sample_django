@@ -11,3 +11,9 @@ def ping(request):
     return HttpResponse(time)
 
 
+def visit_list(request):
+    visits = VisitTime.objects.all()
+    response = ""
+    for visit in visits:
+        response += visit.time + "|"
+    return HttpResponse(response)

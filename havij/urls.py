@@ -20,5 +20,5 @@ from shalgham import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ping/', views.ping),
-    # url(r'^list/', views.list)
+    url(r'^list/', views.visit_list)
 ]
